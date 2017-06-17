@@ -1,0 +1,10 @@
+version: '2'
+services:
+  pyton:
+    build: pyton
+    entrypoint: /bin/bash
+    tty: true
+#    ports:
+#      - "127.0.0.2:3000:3000"
+    volumes:
+      - /home/pdarii/public_html/image_recognition:/app
